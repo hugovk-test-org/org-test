@@ -62,7 +62,6 @@ jobs:
               $item: ID!
               $status_field: ID!
               $status_value: String!
-              $date_field: ID!
               $date_value: String!
             ) {
               set_status: updateProjectNextItemField(input: {
@@ -78,7 +77,6 @@ jobs:
               set_date_posted: updateProjectNextItemField(input: {
                 projectId: $project
                 itemId: $item
-                fieldId: $date_field
                 value: $date_value
               }) {
                 projectNextItem {
